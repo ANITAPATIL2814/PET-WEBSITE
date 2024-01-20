@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dog website</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="dog.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--navbar-->
+   <div class="sticky-top" style="margin-bottom: 10px;">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a href="images/dog/doglogo.jpg"><img src="images/dog/doglogo.jpg" style="margin-right: 10px;" width="40px" class="img-thumbnail" alt="..."></a>
+            <a class="navbar-brand" href="dog.html">Dogs</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="web.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="cat.html">Cats</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="birds.html">Birds</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input id="searchbar" onkeyup="search_name()" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button  class="btn btn-outline-info" type="submit">Search</button>
+            </form>
+            <div class="in-nav">
+                <a class="nav-link active" aria-current="page" href="web_login.html">Login</a>
+                <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-phone"></i></a>
+                <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-user"></i></a>
+                <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--mainpart---->
+    <main>
+      <div class="in-main-card">
+        <div class="inside-main-carousel">
+          <div id="carousel-1" class="carousel slide" >
+            <div class="card" style="width: 15rem;  ">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img style="height: 150px;" src="images/dog/dog11.png" class="card-img-top" alt="..." >
+                </div>
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 150px;" src="images/dog/dog12.jpg" class="card-img-top" alt="...">
+                </div> 
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 150px;" src="images/dog/dog13.jpg" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Labrador</h5>
+                <p class="card-text">The Labrador Retriever, is a British breed of retriever gun dog. It was developed in the United Kingdom</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Colour</b> Black, chocolate, silver, or yellow </li>
+                <li class="list-group-item"><b>Life span</b>	10-12 years</li>
+              </ul>
+            </div>                
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
+              <span class="visually-hidden">Next</span>              
+            </button>
+          </div>  
+          <div id="carousel-2" class="carousel slide">
+              <div class="card" style="width: 15rem;  ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 150px;" src="images/dog/dog21.jpg" class="card-img-top" alt="..." >
+                  </div>
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 150px;" src="images/dog/dog22.jpg" class="card-img-top" alt="...">
+                  </div> 
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 150px;" src="images/dog/dog23.jpg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">German Shepherd</h5>
+                  <p class="card-text">The German Shepherd, also known in Britain as an Alsatian, is a German breed of working dog of medium </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Colour</b> Black, White, Black & Tan, Black & Silver, Sable</li>
+                  <li class="list-group-item"><b>Life span</b>	9 - 13 years</li>
+                </ul>
+              </div>                
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>              
+              </button>
+          </div> 
+            <div id="carousel-3" class="carousel slide">
+              <div class="card" style="width: 15rem;  ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 150px;" src="images/dog/dog31.jpg" class="card-img-top" alt="..." >
+                  </div>
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 150px;" src="images/dog/dog32.jpg" class="card-img-top" alt="...">
+                  </div> 
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 150px;" src="images/dog/dog33.jpg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Golden Retriever</h5>
+                  <p class="card-text">The Golden Retriever is a Scottish breed of retriever dog of medium size. It is characterised by a gentle</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Colour</b>  Dark Golden, Light Golden, Cream, Golden</li>
+                  <li class="list-group-item"><b>Life span</b>	10 - 12 years</li>
+                </ul>
+              </div>                
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-3" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-3" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>              
+              </button>
+            </div> 
+            <div id="carousel-4" class="carousel slide">
+              <div class="card" style="width: 15rem;  ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 150px;" src="images/dog/dog41.jpg" class="card-img-top" alt="..." >
+                  </div>
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 150px;" src="images/dog/dog42.jpg" class="card-img-top" alt="...">
+                  </div> 
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 150px;" src="images/dog/dog43.jpg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Siberian Husky</h5>
+                  <p class="card-text">The Siberian Husky is a medium-sized sled dog breed. The breed belongs to Spitz genetic family</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Colour</b>  White, Black, Gray-White, Black-Tan, Silver-gray</li>
+                  <li class="list-group-item"><b>Life span</b>	12-15 years</li>
+                </ul>
+              </div>                
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-4" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-4" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>              
+              </button>
+            </div> 
+            <div id="carousel-5" class="carousel slide">
+              <div class="card" style="width: 15rem;  ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 150px;" src="images/dog/dog52.jpg" class="card-img-top" alt="..." >
+                  </div>
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 150px;" src="images/dog/dog51.jpeg" class="card-img-top" alt="...">
+                  </div> 
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 150px;" src="images/dog/dog53.jpg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">American Eskimo</h5>
+                  <p class="card-text">The American Eskimo Dog is a breed of companion dog, originating in Germany and member of the Spitz family</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Colour</b>  White, Biscuit, black, brown</li>
+                  <li class="list-group-item"><b>Life span</b>	13-15 years</li>
+                </ul>
+              </div>                
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-5" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-5" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>              
+              </button>
+            </div>
+            <div id="carousel-6" class="carousel slide">
+              <div class="card" style="width: 15rem;  ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 150px;" src="images/dog/dog62.jpg" class="card-img-top" alt="..." >
+                  </div>
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 150px;" src="images/dog/dog63.jpg" class="card-img-top" alt="...">
+                  </div> 
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 150px;" src="images/dog/dog61.jpg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Maltese dog</h5>
+                  <p class="card-text">Maltese dog refers an ancient variety of dwarf, white-coated dog breed popular in Ancient Rome</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Colour</b> Black, chocolate, silver,</li>
+                  <li class="list-group-item"><b>Life span</b>	12 - 15 years</li>
+                </ul>
+              </div>                
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-6" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-6" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>              
+              </button>
+            </div>
+            <div id="carousel-7" class="carousel slide">
+              <div class="card" style="width: 15rem;  ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 150px;" src="images/dog/dog72.jpg" class="card-img-top" alt="..." >
+                  </div>
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 150px;" src="images/dog/dog71.jpg" class="card-img-top" alt="...">
+                  </div> 
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 150px;" src="images/dog/dog73.jpg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Chow Chow</h5>
+                  <p class="card-text">The Chow Chow is a spitz-type of dog breed from Northern China. The Chow Chow is a sturdily built dog,</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Colour</b> Black, chocolate, Golden, Gray</li>
+                  <li class="list-group-item"><b>Life span</b>	9 - 15 years</li>
+                </ul>
+              </div>                
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-7" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-7" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>              
+              </button>
+            </div>
+            <div id="carousel-8" class="carousel slide">
+              <div class="card" style="width: 15rem;  ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 150px;" src="images/dog/dog81.jpg" class="card-img-top" alt="..." >
+                  </div>
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 150px;" src="images/dog/dog83.jpg" class="card-img-top" alt="...">
+                  </div> 
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 150px;" src="images/dog/dog82.jpg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Yorkshire Terrier</h5>
+                  <p class="card-text">The Yorkshire Terrier, also known as a Yorkie, is a British breed of toy dog of terrier type.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Colour</b> Black-Gold, Black, Golden, brown </li>
+                  <li class="list-group-item"><b>Life span</b>	13 - 16 years</li>
+                </ul>
+              </div>                
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-8" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-8" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>              
+              </button>
+            </div>
+            <div id="carousel-9" class="carousel slide">
+              <div class="card" style="width: 15rem;  ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 150px;" src="images/dog/dog93.jpg" class="card-img-top" alt="..." >
+                  </div>
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 150px;" src="images/dog/dog92.jpg" class="card-img-top" alt="...">
+                  </div> 
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 150px;" src="images/dog/dog91.png" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Bulldog</h5>
+                  <p class="card-text">The Bulldog is a British breed of dog of mastiff type. It may also be known as the English Bulldog or British Bulldog.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Colour</b> White, Fawn, Piebald, Fawn & White, Brindle-White</li>
+                  <li class="list-group-item"><b>Life span</b>	8-10years</li>
+                </ul>
+              </div>                
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-9" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-9" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>              
+              </button>
+            </div>
+            <div id="carousel-10" class="carousel slide">
+              <div class="card" style="width: 15rem;  ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 150px;" src="images/dog/dog101.jpg" class="card-img-top" alt="..." >
+                  </div>
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 150px;" src="images/dog/dog102.jpg" class="card-img-top" alt="...">
+                  </div> 
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 150px;" src="images/dog/DOG103.jpg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Pomeranian</h5>
+                  <p class="card-text">The Pomeranian is a breed of dog of the Spitz type that is named for the Pomerania region in north-west Poland</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Colour</b> Black, Brown, White, chocolate</li>
+                  <li class="list-group-item"><b>Life span</b>	12 - 16 years</li>
+                </ul>
+              </div>                
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-10" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-10" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>              
+              </button>
+            </div>
+    </main>
+    <!---footer part-->
+    <footer>
+        <div class="inside-footer">
+          <div>
+            <h3>Follow us</h3>
+            <div class="box1">
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            <a href=""><i class="fa fa-youtube"></i></a>
+            <a href=""><i class="fa fa-github"></i></a>
+            <a href=""> <i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+          <div>
+            <h3>Shop now</h3>
+            <ul>
+              <li><a href="dog.html">Dogs</a></li>
+              <li> <a href="cat.html">Cats</a></li>
+              <li><a href="birds.html">Birds</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Online shopping</h3>
+            <ul>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Returns Policy</a></li>
+              <li><a href="">Shipping Policy</a></li>
+              <li><a href="">Returns Centre</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+              <h3>Sign Up</h3>
+              <ul>
+                <li><h5>For us it's all about the love for Pets!</h5></li>
+                <li><input class="form-input" type="email" placeholder="  Email address"></li>
+                <li><button class="form-button">Sign up</button></li>
+              </ul>
+          </div>
+        </div>
+    </footer>
+    </div>
+      <script src="web.js"></script>      
+    </div>
+</body>
+</html>

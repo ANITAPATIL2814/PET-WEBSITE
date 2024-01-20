@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds website</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="dog.css">
+    <!-- <link rel="stylesheet" href="birds.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    *{
+      font-family:"Segoe UI";
+    }
+  </style>
+  </head>
+<body>
+    <!--navbar-->
+   <div class="sticky-top" style="margin-bottom: 10px;">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a href="images/bird/birdlogo.webp"><img src="images/bird/birdlogo.webp" style="margin-right: 10px;" width="40px" class="img-thumbnail" alt="..."></a>
+            <a class="navbar-brand" href="birds.html">Birds</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="web.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="dog.html">Dogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="cat.html">Cats</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input id="searchbar" onkeyup="search_name()" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-info" type="submit">Search</button>
+            </form>
+            <div class="in-nav">
+                <a class="nav-link active" aria-current="page" href="web_login.html">Login</a>
+                <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-phone"></i></a>
+                <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-user"></i></a>
+                <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-cart-shopping"></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--main part-->
+    <main>
+      <div class="in-main-card">
+        <div class="inside-main-carousel">
+          <div id="carousel-1" class="carousel slide" >
+            <div class="card" style="width: 15rem;  ">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img style="height: 200px;" src="images/bird/bird83.jpg" class="card-img-top" alt="..." >
+                </div>
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 200px;" src="images/bird/bird82.jpg" class="card-img-top" alt="...">
+                </div> 
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 200px;" src="images/bird/bird81.jpg" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Peacock</h5>
+                <p class="card-text">The Indian peafowl known as common peafowl & blue peafowl, is a peafowl species native Indian subcontinent</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Colour</b> dull grey, brown, green, white,  </li>
+                <li class="list-group-item"><b>Life span</b> 12 - 15 years</li>
+              </ul>
+            </div>                
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
+              <span class="visually-hidden">Next</span>              
+            </button>
+          </div>
+          <div id="carousel-2" class="carousel slide" >
+            <div class="card" style="width: 15rem;  ">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img style="height: 200px;" src="images/bird/bird21.jpg" class="card-img-top" alt="..." >
+                </div>
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 200px;" src="images/bird/bird22.jpg" class="card-img-top" alt="...">
+                </div> 
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 200px;" src="images/bird/bird23.jpg" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Columbidae</h5>
+                <p class="card-text">Columbidae is a bird family consisting of doves and pigeons. It is the only family in the order Columbiformes.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Colour</b> Red, yellow, blue, or white. </li>
+                <li class="list-group-item"><b>Life span</b> 3 - 5 years</li>
+              </ul>
+            </div>                
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+              <span class="visually-hidden">Next</span>              
+            </button>
+          </div>
+          <div id="carousel-3" class="carousel slide" >
+            <div class="card" style="width: 15rem;  ">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img style="height: 200px;" src="images/bird/bird31.jpg" class="card-img-top" alt="..." >
+                </div>
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 200px;" src="images/bird/bird32.jpg" class="card-img-top" alt="...">
+                </div> 
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 200px;" src="images/bird/bird33.jpg" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Chicken</h5>
+                <p class="card-text">The chicken is domesticated species arose from red junglefowl, originally from Southeast Asia.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Colour</b> Black, brown, yellow, red </li>
+                <li class="list-group-item"><b>Life span</b> 5 - 10 years</li>
+              </ul>
+            </div>                
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-3" data-bs-slide="prev">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-3" data-bs-slide="next">
+              <span class="visually-hidden">Next</span>              
+            </button>
+          </div>
+          <div id="carousel-4" class="carousel slide" >
+            <div class="card" style="width: 15rem;  ">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img style="height: 200px;" src="images/bird/bird42.jpg" class="card-img-top" alt="..." >
+                </div>
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 200px;" src="images/bird/bird41.jpg" class="card-img-top" alt="...">
+                </div> 
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 200px;" src="images/bird/bird43.jpg" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Blue jay </h5>
+                <p class="card-text">The blue jay is a passerine bird in the family Corvidae, native to eastern North America.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Colour</b> Blue, white, and black plumage</li>
+                <li class="list-group-item"><b>Life span</b>  6 - 7 years</li>
+              </ul>
+            </div>                
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-4" data-bs-slide="prev">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-4" data-bs-slide="next">
+              <span class="visually-hidden">Next</span>              
+            </button>
+          </div>
+          <div id="carousel-5" class="carousel slide" >
+            <div class="card" style="width: 15rem;  ">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img style="height: 200px;" src="images/bird/bird51.jpg" class="card-img-top" alt="..." >
+                </div>
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 200px;" src="images/bird/bird52.jpg" class="card-img-top" alt="...">
+                </div> 
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 200px;" src="images/bird/bird53.jpg" class="card-img-top" alt="...">
+                </div>
+                
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Hummingbirds</h5>
+                <p class="card-text">Hummingbirds are birds native to the Americas and comprise the biological family Trochilidae</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Colour</b> Pink-white, green, blue-white</li>
+                <li class="list-group-item"><b>Life span</b> 3 - 5 years</li>
+              </ul>
+            </div>                
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-5" data-bs-slide="prev">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-5" data-bs-slide="next">
+              <span class="visually-hidden">Next</span>              
+            </button>
+          </div>
+          <div id="carousel-6" class="carousel slide" >
+            <div class="card" style="width: 15rem;  ">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img style="height: 200px;" src="images/bird/bird61.jpg" class="card-img-top" alt="..." >
+                </div>
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 200px;" src="images/bird/bird62.jpg" class="card-img-top" alt="...">
+                </div> 
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 200px;" src="images/bird/bird63.jpg" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Corvus</h5>
+                <p class="card-text">Corvus is a widely distributed genus of birds ranging from medium to large in the family Corvidae</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Colour</b> Black, white, gray, black-white</li>
+                <li class="list-group-item"><b>Life span</b>  10 - 15 years</li>
+              </ul>
+            </div>                
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-6" data-bs-slide="prev">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-6" data-bs-slide="next">
+              <span class="visually-hidden">Next</span>              
+            </button>
+          </div>
+          <div id="carousel-7" class="carousel slide" >
+            <div class="card" style="width: 15rem;  ">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img style="height: 200px;" src="images/bird/bird71.jpg" class="card-img-top" alt="..." >
+                </div>
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 200px;" src="images/bird/bird72.jpg" class="card-img-top" alt="...">
+                </div> 
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 200px;" src="images/bird/bird73.jpg" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">bluebirds</h5>
+                <p class="card-text">The bluebirds are a North American group of medium-sized, mostly insectivorous or omnivorous birds</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Colour</b> Blue , white-gray, blue-brown-gray</li>
+                <li class="list-group-item"><b>Life span</b> 8 - 10 years</li>
+              </ul>
+            </div>                
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-7" data-bs-slide="prev">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-7" data-bs-slide="next">
+              <span class="visually-hidden">Next</span>              
+            </button>
+          </div>
+          <div id="carousel-8" class="carousel slide" >
+            <div class="card" style="width: 15rem;  ">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img style="height: 200px;" src="images/bird/bird 12.jpg" class="card-img-top" alt="..." >
+                </div>
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 200px;" src="images/bird/bird11.jpg" class="card-img-top" alt="...">
+                </div> 
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 200px;" src="images/bird/bird13.jpg" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Parrots</h5>
+                <p class="card-text">Parrots, also known as psittacines, are birds with a strong curved beak, upright stance, and clawed feet</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Colour</b> Parrots is green, Cockatoos: black, white, red</li>
+                <li class="list-group-item"><b>Life span</b> 40 - 50 years</li>
+              </ul>
+            </div>                
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-8" data-bs-slide="prev">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-8" data-bs-slide="next">
+              <span class="visually-hidden">Next</span>              
+            </button>
+          </div>
+          <div id="carousel-9" class="carousel slide" >
+            <div class="card" style="width: 15rem;  ">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img style="height: 200px;" src="images/bird/bird91.jpg" class="card-img-top" alt="..." >
+                </div>
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 200px;" src="images/bird/bird92.jpg" class="card-img-top" alt="...">
+                </div> 
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 200px;" src="images/bird/bird93.jpg" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Kingfishers</h5>
+                <p class="card-text">Kingfishers are a family, of small to medium-sized, brightly colored birds in the order Coraciiformes.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Colour</b> Blue-gray-brown, white-blue</li>
+                <li class="list-group-item"><b>Life span</b> 14 - 15 years</li>
+              </ul>
+            </div>                
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-9" data-bs-slide="prev">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-9" data-bs-slide="next">
+              <span class="visually-hidden">Next</span>              
+            </button>
+          </div>
+          <div id="carousel-10" class="carousel slide" >
+            <div class="card" style="width: 15rem;  ">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img style="height: 200px;" src="images/bird/bird102.jpg" class="card-img-top" alt="..." >
+                </div>
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 200px;" src="images/bird/bird101.jpg" class="card-img-top" alt="...">
+                </div> 
+                <div class="carousel-item" style="border-radius: 15px;">
+                  <img style="height: 200px;" src="images/bird/bird103.jpg" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Penguins</h5>
+                <p class="card-text">Penguins are a group of aquatic flightless birds from the order Sphenisciformes of the family Spheniscidae</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Colour</b> Black-white, yellow-black-brown</li>
+                <li class="list-group-item"><b>Life span</b> 15 - 20 years</li>
+              </ul>
+            </div>                
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-10" data-bs-slide="prev">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-10" data-bs-slide="next">
+              <span class="visually-hidden">Next</span>              
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!---footer part-->
+    <footer>
+        <div class="inside-footer">
+          <div>
+            <h3>Follow us</h3>
+            <div class="box1">
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            <a href=""><i class="fa fa-youtube"></i></a>
+            <a href=""><i class="fa fa-github"></i></a>
+            <a href=""> <i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+          <div>
+            <h3>Shop now</h3>
+            <ul>
+              <li><a href="dog.html">Dogs</a></li>
+              <li> <a href="cat.html">Cats</a></li>
+              <li><a href="birds.html">Birds</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Online shopping</h3>
+            <ul>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Returns Policy</a></li>
+              <li><a href="">Shipping Policy</a></li>
+              <li><a href="">Returns Centre</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+              <h3>Sign Up</h3>
+              <ul>
+                <li><h5>For us it's all about the love for Pets!</h5></li>
+                <li><input class="form-input" type="email" placeholder="  Email address"></li>
+                <li><button class="form-button">Sign up</button></li>
+              </ul>
+          </div>
+        </div>
+    </footer>
+    <script src="web.js"></script>
+</body>
+</html>

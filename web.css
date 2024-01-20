@@ -1,0 +1,78 @@
+body{
+    height: 1000px;
+}
+*{
+    text-decoration: none;
+}
+/*----navbar----------*/
+nav .navbar-brand{
+    font-weight: 700;
+}
+nav .navbar-brand::first-letter{
+    color:red;
+}
+.in-nav{
+    margin-left: 40px;
+    display: flex;
+}
+
+.in-nav a{
+    margin-right: 20px;
+}
+
+
+div a{
+    text-decoration: none;
+    color:white
+}
+/*---main part----*/
+.inside-main-carousel img{
+    height: 500px;
+}
+/*------footer part------*/
+.inside-footer{
+    background-color: rgb(68, 68, 69);
+    height: 300px;
+    color: white;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    
+}
+.inside-footer:hover a{
+    text-decoration: underline;
+}
+div h3{
+    color: red;
+    margin: 20px;
+}
+.box1{
+    margin-left: 15px;  
+}
+.box1 a{
+    padding-left: 8px;
+}
+ul {
+    list-style: none;
+}
+footer ul li{
+    margin-bottom: 10px;
+}
+.form-input {
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    outline: none;
+}
+.form-button{
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;  
+    background-color: red; 
+    color: white;
+}
+.form-button:hover{
+    border: 1px solid black;
+}

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cat website</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="dog.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--navbar-->
+    <div class="sticky-top" style="margin-bottom: 10px;">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a href="images/cat/catlogo.webp"><img src="images/cat/catlogo.webp" style="margin-right: 10px;" width="40px" class="img-thumbnail" alt="..."></a>
+            <a class="navbar-brand" href="cat.html">Cats</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="web.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="dog.html">Dogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="birds.html">Birds</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input id="searchbar" onkeyup="search_name()" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-info" type="submit">Search</button>
+            </form>
+            <div class="in-nav">
+                <a class="nav-link active" aria-current="page" href="web_login.html">Login</a>
+                <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-phone"></i></a>
+                <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-user"></i></a>
+                <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--main part-->
+    <main>
+      <div class="row" ms-4 m4>
+        <div class="in-main-card">
+          <div class="inside-main-carousel">
+            <div id="carousel-1" class="carousel slide" >
+              <div class="card" style="width: 15rem;  ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 200px;" src="images/cat/cat11.jpg" class="card-img-top" alt="..." >
+                  </div>
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 200px;" src="images/cat/cat12.jpg" class="card-img-top" alt="...">
+                  </div> 
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 200px;" src="images/cat/cat13.jpg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Persian</h5>
+                  <p class="card-text">The Persian cat, also known as the Persian longhair, is a long-haired breed of cat characterised by a round face and short muzzle</p>
+                </div>
+                <ul  class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Colour</b> Blue, black, white, red, cream, chocolate</li>
+                  <li class="list-group-item"><b>Life span</b>	15-20 years</li>
+                </ul>
+              </div>                
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>              
+              </button>
+            </div> 
+            <div id="carousel-2" class="carousel slide" >
+              <div class="card" style="width: 15rem;  ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 200px;" src="images/cat/cat22.jpeg" class="card-img-top" alt="..." >
+                  </div>
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 200px;" src="images/cat/cat21.jpg" class="card-img-top" alt="...">
+                  </div> 
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 200px;" src="images/cat/cat23.jpg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Siamese</h5>
+                  <p class="card-text">The Siamese cat is one of the first distinctly recognised breeds of Asian cat. Derived from the Wichianmat landrace</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Colour</b> Black-white, black-cream, black-chocolate</li>
+                  <li class="list-group-item"><b>Life span</b>	10-15 years</li>
+                </ul>
+              </div>                
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>              
+              </button>
+            </div> 
+            <div id="carousel-3" class="carousel slide" >
+              <div class="card" style="width: 15rem;  ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 200px;" src="images/cat/cat31.jpg" class="card-img-top" alt="..." >
+                  </div>
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 200px;" src="images/cat/cat32.jpg" class="card-img-top" alt="...">
+                  </div> 
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 200px;" src="images/cat/cat32.jpg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Ragdoll</h5>
+                  <p class="card-text">The Ragdoll is a breed of cat with a distinct colorpoint coat and blue eyes. Its morphology is large and weighty.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Colour</b> seal, blue, lilac, chocolate, flame</li>
+                  <li class="list-group-item"><b>Life span</b>	13-15 years</li>
+                </ul>
+              </div>                
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-3" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-3" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>              
+              </button>
+            </div> 
+            <div id="carousel-4" class="carousel slide" >
+              <div class="card" style="width: 15rem;  ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 200px;" src="images/cat/cat43.jpg" class="card-img-top" alt="..." >
+                  </div>
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 200px;" src="images/cat/cat42.jpg" class="card-img-top" alt="...">
+                  </div> 
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 200px;" src="images/cat/cat41.jpg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Bombay</h5>
+                  <p class="card-text">The Bombay cat is a short-haired breed of domestic cat. Bombays are glossy solid black cats with a muscular build.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Colour</b> All-black coat, including the whiskers</li>
+                  <li class="list-group-item"><b>Life span</b>	15-20 years</li>
+                </ul>
+              </div>                
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-4" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-4" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>              
+              </button>
+            </div> 
+            <div id="carousel-5" class="carousel slide" >
+              <div class="card" style="width: 15rem;  ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 200px;" src="images/cat/cat51.jpg" class="card-img-top" alt="..." >
+                  </div>
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 200px;" src="images/cat/cat52.jpg" class="card-img-top" alt="...">
+                  </div> 
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 200px;" src="images/cat/cat53.jpg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Maine Coon</h5>
+                  <p class="card-text">The Maine Coon is a large domesticated cat breed. It is one of the oldest natural breeds in North America. The breed originated in U.S.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Colour</b> 	Black-ebony, blue-gray, chocolate-brown </li>
+                  <li class="list-group-item"><b>Life span</b>	12-15 years</li>
+                </ul>
+              </div>                
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-5" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-5" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>              
+              </button>
+            </div> 
+            <div id="carousel-6" class="carousel slide" >
+              <div class="card" style="width: 15rem;  ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 200px;" src="images/cat/cat63.jpg" class="card-img-top" alt="..." >
+                  </div>
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 200px;" src="images/cat/cat62.jpg" class="card-img-top" alt="...">
+                  </div> 
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 200px;" src="images/cat/cat61.jpg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Turkish Van</h5>
+                  <p class="card-text">The Turkish Van is a semi-long-haired, standardised breed of domestic cat, which was developed in the United Kingdom</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Colour</b> Red, cream, black, blue</li>
+                  <li class="list-group-item"><b>Life span</b>	15-17 years</li>
+                </ul>
+              </div>                
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-6" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-6" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>              
+              </button>
+            </div> 
+            <div id="carousel-7" class="carousel slide" >
+              <div class="card" style="width: 15rem;  ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 200px;" src="images/cat/cat72.jpg" class="card-img-top" alt="..." >
+                  </div>
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 200px;" src="images/cat/cat71.jpg" class="card-img-top" alt="...">
+                  </div> 
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 200px;" src="images/cat/ccat73.jpg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">American Shorthair</h5>
+                  <p class="card-text">The American Shorthair is a breed of domestic cat believed to be descended from European cat. it was the eighth most popular  cat</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Colour</b> Brown, Grey, Black, White, Beige, Silver, Cream</li>
+                  <li class="list-group-item"><b>Life span</b>	15-20 years</li>
+                </ul>
+              </div>                
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-7" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-7" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>              
+              </button>
+            </div> 
+            <div id="carousel-8" class="carousel slide" >
+              <div class="card" style="width: 15rem;  ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 200px;" src="images/cat/cat82.jpg" class="card-img-top" alt="..." >
+                  </div>
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 200px;" src="images/cat/cat81.jpg" class="card-img-top" alt="...">
+                  </div> 
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 200px;" src="images/cat/cat83.jpg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Norwegian Forest</h5>
+                  <p class="card-text">The Norwegian Forest cat is a breed of cat originating in Northern Europe. This breed is adapted to a very cold climate</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Colour</b> White, black, blue, red, cream, golden </li>
+                  <li class="list-group-item"><b>Life span</b>	13-15 years</li>
+                </ul>
+              </div>                
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-8" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-8" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>              
+              </button>
+            </div> 
+            <div id="carousel-9" class="carousel slide" >
+              <div class="card" style="width: 15rem;  ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 200px;" src="images/cat/cat93.jpg" class="card-img-top" alt="..." >
+                  </div>
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 200px;" src="images/cat/cat92.jpg" class="card-img-top" alt="...">
+                  </div> 
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 200px;" src="images/cat/cat91.jpg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Oriental Shorthair</h5>
+                  <p class="card-text">The Oriental Shorthair is a breed of domestic cat that is developed from and closely related to the Siamese cat. Origin: Thailand</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Colour</b> Red, cream, blue, lavender, fawn-white.</li>
+                  <li class="list-group-item"><b>Life span</b>	12-15 years</li>
+                </ul>
+              </div>                
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-9" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-9" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>              
+              </button>
+            </div> 
+            <div id="carousel-10" class="carousel slide" >
+              <div class="card" style="width: 15rem;  ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="height: 200px;" src="images/cat/cat103.jpeg" class="card-img-top" alt="..." >
+                  </div>
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 200px;" src="images/cat/cat102.jpg" class="card-img-top" alt="...">
+                  </div> 
+                  <div class="carousel-item" style="border-radius: 15px;">
+                    <img style="height: 200px;" src="images/cat/cat101.jpg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Balinese</h5>
+                  <p class="card-text">The Balinese is a long-haired breed of domestic cat with Siamese-style point coloration and sapphire-blue eyes.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Colour</b> Seal, blue, chocolate, red and cream point,</li>
+                  <li class="list-group-item"><b>Life span</b>	15-20 years</li>
+                </ul>
+              </div>                
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-10" data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-10" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>              
+              </button>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </main>
+    <!---footer part-->
+    <footer>
+        <div class="inside-footer">
+          <div>
+            <h3>Follow us</h3>
+            <div class="box1">
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            <a href=""><i class="fa fa-youtube"></i></a>
+            <a href=""><i class="fa fa-github"></i></a>
+            <a href=""> <i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+          <div>
+            <h3>Shop now</h3>
+            <ul>
+              <li><a href="dog.html">Dogs</a></li>
+              <li> <a href="cat.html">Cats</a></li>
+              <li><a href="birds.html">Birds</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Online shopping</h3>
+            <ul>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Returns Policy</a></li>
+              <li><a href="">Shipping Policy</a></li>
+              <li><a href="">Returns Centre</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+              <h3>Sign Up</h3>
+              <ul>
+                <li><h5>For us it's all about the love for Pets!</h5></li>
+                <li><input class="form-input" type="email" placeholder="  Email address"></li>
+                <li><button class="form-button">Sign up</button></li>
+              </ul>
+          </div>
+        </div>
+    </footer>
+    <!--Add carsousel file-->
+    <script src="web.js"></script>
+</body>
+</html>

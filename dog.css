@@ -1,0 +1,20 @@
+/*--- main card body----*/
+.inside-main-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.card-body {
+    background-color:rgb(197, 195, 195);
+}
+.card-body h5:hover{
+    border: solid 1px aqua;
+    font-weight: 700;
+}
+.card-body h5::first-letter{
+    color: red;
+}
+.card{
+    /* margin-bottom: 10px; */
+    margin: 23px;
+}
