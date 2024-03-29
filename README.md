@@ -1,6 +1,6 @@
 
 ## Introduction
-Welcome to the Pet Website Project! This project aims to provide a Dog, Cat, Bird information for web development. 
+Welcome to the Pet Website Project! This project aims to provide a Dog, Cat, Bird information for web development.
 
 ## Frontend Technology
 - HTML
